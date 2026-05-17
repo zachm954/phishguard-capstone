@@ -11,7 +11,7 @@ This project is being developed as part of FIU Capstone 1 using Agile/Scrum meth
 **PhishGuard Team**
 
 - Zach Melendez — Product Owner
-- Hailey — Team Lead / Scrum Coordinator
+- Hailey Munoz — Team Lead / Scrum Coordinator
 - Team Member 3 — Research & Documentation
 - Team Member 4 — Design / UX
 - Team Member 5 — QA / Requirements
