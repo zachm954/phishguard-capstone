@@ -83,7 +83,7 @@ Responsibilities:
 ---
 
 ### Team Lead / Scrum Coordinator
-**Hailey**
+**Hailey Munoz**
 
 Responsibilities:
 - Team coordination
@@ -94,7 +94,7 @@ Responsibilities:
 ---
 
 ### Research & Documentation Lead
-**Team Member 3**
+**Luis Nicaragua**
 
 Responsibilities:
 - Cybersecurity research
@@ -104,7 +104,7 @@ Responsibilities:
 ---
 
 ### Design / UX Lead
-**Team Member 4**
+**Jade Garcia**
 
 Responsibilities:
 - Wireframes
@@ -115,7 +115,7 @@ Responsibilities:
 ---
 
 ### QA / Requirements Support
-**Team Member 5**
+**Onyenka Okoh **
 
 Responsibilities:
 - User stories
