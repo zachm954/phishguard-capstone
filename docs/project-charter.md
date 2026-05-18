@@ -115,7 +115,7 @@ Responsibilities:
 ---
 
 ### QA / Requirements Support
-**Onyenka Okoh **
+**Onyenka Okoh**
 
 Responsibilities:
 - User stories
