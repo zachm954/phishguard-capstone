@@ -12,9 +12,9 @@ This project is being developed as part of FIU Capstone 1 using Agile/Scrum meth
 
 - Zach Melendez — Product Owner
 - Hailey Munoz — Team Lead / Scrum Coordinator
-- Team Member 3 — Research & Documentation
-- Team Member 4 — Design / UX
-- Team Member 5 — QA / Requirements
+- Luis Nicaragua — Research & Documentation
+- Jade Garcia — Design / UX
+- Onyenka Okoh — QA / Requirements
 
 ---
 
