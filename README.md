@@ -1,13 +1,15 @@
 # PhishGuard
 
 ## Overview
-PhishGuard is a cybersecurity-focused web application concept designed to help users identify suspicious emails, text messages, and URLs through explainable phishing risk analysis and cybersecurity awareness guidance.
 
-This project is being developed as part of FIU Capstone 1 using Agile/Scrum methodologies.
+PhishGuard is a cybersecurity-focused web application prototype designed to help users recognize suspicious emails, text messages, and URLs through explainable phishing-risk analysis and cybersecurity-awareness guidance.
+
+The project is being developed as part of FIU Capstone 1 using Agile and Scrum methodologies. Capstone 1 focuses on project planning, research, requirements, interface design, documentation, testing preparation, and prototype development.
 
 ---
 
 ## Team
+
 **PhishGuard Team**
 
 - Zach Melendez — Product Owner
@@ -19,28 +21,48 @@ This project is being developed as part of FIU Capstone 1 using Agile/Scrum meth
 ---
 
 ## Project Goals
+
 PhishGuard aims to:
 
-- Help users recognize phishing attempts
+- Help users recognize common phishing indicators
 - Improve cybersecurity awareness
-- Provide explainable phishing risk analysis
+- Provide understandable phishing-risk explanations
 - Support safer digital decision-making
-- Demonstrate Agile/Scrum software project execution
+- Demonstrate Agile and Scrum project execution
+- Establish a foundation for continued development in Capstone 2
+
+---
+
+## Current Prototype Scope
+
+The Capstone 1 prototype and project materials focus on:
+
+- Suspicious URL or message submission
+- Input validation planning
+- Explainable phishing-risk warnings
+- Phishing-indicator education
+- Bait Breakdown explanations
+- Recommended user actions
+- User-interface wireframes and prototype designs
+- QA test cases and requirements documentation
+
+Features that are not fully implemented are identified as proposed Capstone 2 functionality.
 
 ---
 
 ## Repository Structure
 
-```text
-docs/
-diagrams/
-wireframes/
-prototype/
-poster/
-```
+- [`docs/`](docs/) — Project documentation, research, requirements, QA materials, and Scrum artifacts
+- [`diagrams/`](diagrams/) — System architecture and phishing-analysis workflow diagrams
+- [`wireframes/`](wireframes/) — Initial and revised user-interface designs
+- [`prototype/`](prototype/) — Prototype files, screenshots, and setup information
+- [`poster/`](poster/) — Poster working files, visual assets, and final export
 
-### Documentation
-Located in `/docs`
+---
+
+## Documentation
+
+Major documentation located in [`docs/`](docs/) includes:
 
 - Product Vision
 - Problem Statement
@@ -50,29 +72,19 @@ Located in `/docs`
 - Acceptance Criteria
 - Risk Assessment
 - Project Charter
+- Phishing Research
+- Bait Breakdown Documentation
+- Secure URL Handling and Validation
+- Secure Prototype Development Practices
+- QA Testing Documentation
+- Sprint Notes and Meeting Minutes
 
 ---
 
 ## Agile Workflow
-This project uses GitHub Projects for Scrum sprint planning.
 
-Sprint workflow:
+The team uses GitHub Projects for Scrum sprint planning and progress tracking.
 
-Backlog → Sprint 1 To Do → In Progress → Review → Done → Blocked
-
----
-
-## Current Status
-Capstone 1 — Planning & Documentation Phase
-
-Optional lightweight prototype may be developed depending on team bandwidth.
-
----
-
-## Tech Direction (Tentative)
-Future implementation may include:
-
-- React frontend
-- Node.js backend
-- Rule-based phishing detection logic
-- Risk scoring engine
+```text
+Backlog → Sprint 5 To Do → In Progress → Review → Done
+                                      ↘ Blocked
