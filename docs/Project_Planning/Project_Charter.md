@@ -1,4 +1,4 @@
-**Last Updated:** July 2026
+**Last Updated:** July 2026  
 **Revision:** Updated for Sprint 5 and final Capstone 1 deliverables
 
 # Project Charter – PhishGuard
