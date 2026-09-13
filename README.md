@@ -13,10 +13,10 @@ The project is being developed as part of FIU Capstone 1 using Agile and Scrum m
 **PhishGuard Team**
 
 - Zach Melendez — Product Owner
-- Hailey Munoz — Team Lead / Scrum Coordinator
-- Luis Nicaragua — Research & Documentation
-- Jade Garcia — Design / UX
-- Onyenka Okoh — QA / Requirements
+- Luis Nicaragua — Team Lead 
+- Alicia Giro 
+- Jade Garcia 
+- Onyenka Okoh 
 
 ---
 
