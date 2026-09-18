@@ -1,0 +1,51 @@
+List of valid and invalid inputs.
+
+1. Valid URLs
+
+[https://www.google.com](https://www.google.com)
+
+[https://fiu.edu](https://fiu.edu)
+
+[http://example.com/login?user=test](http://example.com/login?user=test)
+
+2. Invalid URLs
+
+ht!ps://bad_domain
+
+not-a-url
+
+http://
+
+https:///missing-host.com
+
+3. Blank / Empty Inputs
+
+"" (empty string)
+
+"   " (whitespace only)
+
+4. HTTP / HTTPS Handling
+
+[http://example.com](http://example.com)
+
+[https://example.com](https://example.com)
+
+example.com (missing scheme/protocol)
+
+5. Shortened URLs
+
+[https://bit.ly/3xXyZ](https://bit.ly/3xXyZ)
+
+[https://tinyurl.com/sample](https://tinyurl.com/sample)
+
+[https://is.gd/example](https://is.gd/example)
+
+6. Suspicious Patterns (Phishing / Malicious)
+
+[https://paypaI.com](https://paypaI.com) (typosquatting using capital I instead of l)
+
+[http://192.168.1.1/login](http://192.168.1.1/login) (raw IP address destination)
+
+[http://login.fiu.edu.account-update.security-alert.com](http://login.fiu.edu.account-update.security-alert.com) (subdomain stuffing / brand impersonation)
+
+[http://user:password@legitimate-site.com](http://user:password@legitimate-site.com)@evil-site.com (credential / host obfuscation)
