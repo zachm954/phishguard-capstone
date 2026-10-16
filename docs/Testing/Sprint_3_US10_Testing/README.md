@@ -52,6 +52,9 @@ An additional combination rule was introduced to classify URLs containing both b
 After the update, TC04 retained its score of 40 but produced the Phishing verdict. This demonstrates that strong indicator combinations can influence the final classification.
 
 ## Known-Bad List Testing
+### Test Evidence
+
+![Known-Bad URL Detection](Known_Bad_List_Test.png)
 
 **Test URL:** `https://malicious.example.test/login`
 
