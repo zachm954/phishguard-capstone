@@ -29,7 +29,7 @@ PhishGuard aims to:
 - Provide understandable phishing-risk explanations
 - Support safer digital decision-making
 - Demonstrate Agile and Scrum project execution
-- Deliver a working, tested prototype by the end ofCapstone 2
+- Deliver a working, tested prototype by the end of Capstone 2
 
 ---
 
