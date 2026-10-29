@@ -104,4 +104,24 @@ PhishGuard has to be trustworthy in how it operates, not just accurate in what i
 
 ---
 
-Verification for Threats 1, 2, and 5 can now be run against the multi-check scoring engine from Sprint 2 (US7). Threats 6–9 were added in Sprint 3 (US13).
+## 10. Reweighting Lets Phishing Built From Weak Signals Through
+
+**Threat:** After the Sprint 3 reweighting, tests TC02 (no HTTPS), TC03 (URL shortener) and TC05 (suspicious TLD) each score 5 and are rated Low Risk. A phishing URL built only from weak signals, with no brand name or phishing keyword, may stay Low Risk even though several of its indicators fire together.
+
+**Control:** Add combination rules, like the existing rule that escalates brand impersonation plus phishing keywords, for common groups of weak signals, and review the thresholds against the full test list. Keep the "Low Risk Detected" wording so a low score is never presented as a guarantee of safety.
+
+**Verification:** Submit URLs that combine several weak signals (for example HTTP, a suspicious TLD, a shortener, and a redirect parameter) and confirm the score rises above Low Risk. Record each result in the test evidence.
+
+---
+
+## 10. Demonstration Known-Bad List Gives False Assurance
+
+**Threat:** The known-bad check currently uses a local demonstration list, so a malicious URL that is not on the list gets no help from it. Users or reviewers could assume the check covers real-world threats.
+
+**Control:** Label the list as a demonstration in the documentation and the demo, decide a real list source, and never describe the check as real-world coverage until one is integrated.
+
+**Verification:** Review the README, the final report and the demo script for any claim of real-world known-bad coverage, and confirm a URL that is not on the list is still scored by the other checks.
+
+---
+
+Verification for Threats 1, 2, 5 and 10 can be run against the Sprint 3 scoring engine once the application code is in the repository. Threats 6–9 were added in Sprint 3 (US13), and Threats 10–11 in Sprint 4 (US17) from the Sprint 3 test evidence.
