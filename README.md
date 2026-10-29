@@ -80,6 +80,8 @@ Major documentation located in [`docs/`](docs/) includes:
 - QA Testing Documentation
 - Sprint Notes and Meeting Minutes
 - Threats, Controls, and Verification (THREATS.md)
+- Data Protection and OWASP ASVS Mapping (DATA_PROTECTION.md)
+- Mitigation and Contingency Plans (MITIGATION_AND_CONTINGENCY.md)
 
 ---
 
