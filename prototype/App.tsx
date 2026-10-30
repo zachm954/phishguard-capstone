@@ -73,17 +73,34 @@ function analyzeUrl(url: string): AnalysisResult {
   let parsedUrl: URL;
 
   try {
-    // Default to HTTPS when no scheme is supplied.
-    const normalized = /^[a-z][a-z0-9+.-]*:\/\//i.test(input)
-      ? input
-      : `https://${input}`;
-
+    // Reject ambiguous or malformed inputs rather than allowing URL() to repair them.
+    if (!input || /\s/.test(input) || input.includes("\\")) {
+      throw new Error("Invalid URL");
+    }
+    // A supplied scheme must be HTTP(S); never rewrite ftp:// or javascript:.
+    const hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(input);
+    if (hasScheme && !/^https?:\/\//i.test(input)) {
+      throw new Error("Unsupported URL scheme");
+    }
+    const normalized = hasScheme ? input : `https://${input}`;
     parsedUrl = new URL(normalized);
 
+    // A hostname must be a reasonable DNS name or IP, not an incomplete label.
+    const host = parsedUrl.hostname.replace(/\.$/, "");
+    const validDnsName =
+      host.length <= 253 &&
+      host.includes(".") &&
+      host.split(".").every((label) =>
+        label.length > 0 && label.length <= 63 &&
+        /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i.test(label)
+      );
+    const validIpAddress = /^\d{1,3}(?:\.\d{1,3}){3}$/.test(host) &&
+      host.split(".").every((part) => Number(part) <= 255);
+    const validIpv6 = host.startsWith("[") && host.endsWith("]");
     if (
       !["http:", "https:"].includes(parsedUrl.protocol) ||
-      !parsedUrl.hostname ||
-      /\s/.test(input)
+      !(validDnsName || validIpAddress || validIpv6) ||
+      (hasScheme && !/^https?:\/\/[^/]+/i.test(input))
     ) {
       throw new Error("Invalid URL");
     }
@@ -256,7 +273,8 @@ function analyzeUrl(url: string): AnalysisResult {
 
   if (isKnownBad || highConfidencePhishing || riskScore >= 50) {
     verdict = "phishing";
-  } else if (riskScore >= 20) {
+  } else if (riskScore >= 25) {
+    // Four coincidental 5-point signals alone should not elevate a URL.
     verdict = "suspicious";
   } else {
     verdict = "safe";
@@ -1057,7 +1075,7 @@ function AppContent() {
                 </div>
                 <h4 className="font-mono font-bold mb-2">3. Stay Safe</h4>
                 <p className="text-sm text-muted-foreground">
-                  Get an instant risk score to decide if it's safe to proceed.
+                  Get a heuristic risk score. Low risk does not guarantee safety.
                 </p>
               </div>
             </div>
