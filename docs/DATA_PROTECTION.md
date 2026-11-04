@@ -44,7 +44,7 @@ Status key: **Planned** = design decision recorded, to be confirmed in code revi
  
 ## 3. Notes and Open Items
  
-- The application code (named in the Sprint 3 test notes as `artifacts/phish-detector/src/App.tsx`) is not yet in the repository, so every "Planned" row must be confirmed against the actual code before it can be marked verified.
+- The application code is in `prototype/App.tsx`. Verification against it began in Sprint 5; rows stay "Planned" until each is confirmed.
 - ASVS requirement numbers are from version 4.0.3. Version 5.0 renumbers chapters, so the team should keep citing 4.0.3 unless it deliberately switches.
 - Items tied to authentication, sessions, and user accounts are out of scope because PhishGuard has no logins (see Boundary of Scope).
 - Usability testing introduces D4. Add a note to the test script telling participants not to enter real personal links.
@@ -66,4 +66,3 @@ Complete this table once the application code is available. Mark each ASVS row i
 | V8 | Scanned URL not in page address | Any scan | PhishGuard's own page URL does not contain the scanned URL | | |
 | V9 | Shortened link not expanded | `https://bit.ly/example` | Analyzed as text, no request to the destination | | |
 | V10 | Weak signals combined | HTTP + `.xyz` + shortener | Score escalates above Low Risk | | |
- 
