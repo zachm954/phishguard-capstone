@@ -83,6 +83,7 @@ Major documentation located in [`docs/`](docs/) includes:
 - Data Protection and OWASP ASVS Mapping (DATA_PROTECTION.md)
 - Mitigation and Contingency Plans (MITIGATION_AND_CONTINGENCY.md)
 - Risk Management and Recovery Plan (RISK_MANAGEMENT_AND_RECOVERY.md)
+- Security and Safety Limitations (LIMITATIONS_SECURITY_SECTION.md)
 
 ---
 
