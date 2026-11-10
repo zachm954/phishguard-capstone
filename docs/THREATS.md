@@ -12,6 +12,8 @@ PhishGuard has to be trustworthy in how it operates, not just accurate in what i
  
 **Verification:** Test the analyzer against a known malformed or exploit-style URL and confirm it returns a risk level without attempting to load the link.
  
+**Status (11/10/2026):** Verified by code review of `prototype/App.tsx`: the analyzer only parses the URL text and makes no network calls. A runtime check with network monitoring is still recommended.
+ 
 ---
  
 ## 2. Look-Alike / Typosquatted Domain
@@ -32,6 +34,8 @@ PhishGuard has to be trustworthy in how it operates, not just accurate in what i
  
 **Verification:** Usability testing — confirm participants can name a red flag independent of the score, not just repeat the risk level back.
  
+**Status (11/10/2026):** The result wording is "Low Risk Detected," not "Safe," and every verdict lists the checks that fired. The usability test that confirms participants can name a red flag has not been completed.
+ 
 ---
  
 ## 4. PhishGuard's Own Data / Permissions Footprint
@@ -41,6 +45,8 @@ PhishGuard has to be trustworthy in how it operates, not just accurate in what i
 **Control:** Collect no personal data, require no login, and store no scan history — nothing exists on our end for an attacker to target.
  
 **Verification:** Code review confirming no user data is persisted or transmitted beyond the scan itself.
+ 
+**Status (11/10/2026):** Does not currently meet the control. The application saves the last five submitted URLs in browser storage (`phishfinder_history`). Nothing is sent to a server, but the data stays on the user's device. Remediation: store only the hostname or remove the history (US20), or document it as a known limitation.
  
 ---
  
@@ -62,6 +68,8 @@ PhishGuard has to be trustworthy in how it operates, not just accurate in what i
  
 **Verification:** Submit a URL containing user:password@ and ?token=..., then confirm the values do not appear in logs, browser storage, or PhishGuard's page URL, and that credentials are masked on screen.
  
+**Status (11/10/2026):** Does not currently meet the control. Code review found that the full URL, including query values, is saved in browser storage, and that credentials in `user:password@host` are shown unmasked in the result. Remediation: mask credentials on screen and stop storing full URLs.
+ 
 ---
  
 ## 7. Output Injection Through Displayed URLs
@@ -71,6 +79,8 @@ PhishGuard has to be trustworthy in how it operates, not just accurate in what i
 **Control:** Render submitted input and result text as plain text with context-aware escaping, display suspicious links as non-clickable text, and accept only http/https URLs.
  
 **Verification:** Submit javascript:alert(1) and a string containing <script> tags, then confirm they are rejected or displayed inertly and nothing executes.
+ 
+**Status (11/10/2026):** Verified by code review: result text is rendered as plain text, there are no clickable links, and `javascript:` and markup strings are rejected. A runtime test is still recommended.
  
 ---
  
@@ -102,6 +112,8 @@ PhishGuard has to be trustworthy in how it operates, not just accurate in what i
  
 **Verification:** Submit URLs that combine several weak signals (for example HTTP, a suspicious TLD, a shortener, and a redirect parameter) and confirm the score rises above Low Risk. Record each result in the test evidence.
  
+**Status (11/10/2026):** Partly verified. TC13 (several weak indicators) scores 25 and is Suspicious, so a combination rule exists. TC08 (several phishing keywords) scores 10 and stays Low Risk, so keyword-only phishing can still be rated Low Risk.
+ 
 ---
  
 ## 11. Demonstration Known-Bad List Gives False Assurance
@@ -115,3 +127,4 @@ PhishGuard has to be trustworthy in how it operates, not just accurate in what i
 ---
  
 Verification for Threats 1, 2, 5 and 10 can be run against the Sprint 3 scoring engine once the application code is in the repository. Threats 6–9 were added in Sprint 3 (US13), and Threats 10–11 in Sprint 4 (US17) from the Sprint 3 test evidence.
+ 
