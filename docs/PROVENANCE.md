@@ -1,0 +1,44 @@
+# Provenance and Ethics: Data Boundary, Ethics Considerations and AI-Use Disclosure
+ 
+Team 107, PhishGuard. This part covers what data the project used, the ethical issues it raises, and where AI tools helped. It sits alongside the component and licence inventory and the verified reference list.
+ 
+---
+ 
+## 1. Data Boundary
+ 
+**What PhishGuard works with.** PhishGuard analyzes the text of a URL that a user types in. It never opens, fetches or renders the link, so it handles no web page content, and the analysis uses 12 rule-based checks. It uses no machine-learning model and no training dataset.
+ 
+**Data used in building and testing the project:**
+- **Test URLs.** Public example addresses and reserved test addresses (for example `example.com`, `example.xyz`, `paypa1.com` used as a lookalike example, and `malicious.example.test`, a reserved `.test` name that cannot belong to a real site). No real victim data and no real phishing links collected from the wild.
+- **Known-bad list.** A small local demonstration list of reserved `.test` entries. It is not a threat-intelligence feed. URLhaus has been identified as a candidate source but is not integrated.
+- **Usability participants.** Participants are recorded as P1–P5 only, with no names or contact details in the repository.
+**Data the project does not use or collect:** no personal data, no logins or accounts, no server-side storage, no analytics, and no scan history sent anywhere.
+ 
+**Known gaps, found in our own verification (11/10/2026).** The application saves the last five submitted URLs in the user's own browser storage, which can include query values, and it shows credentials in a submitted URL unmasked. Nothing leaves the device, but this goes beyond the "store nothing" boundary above. It is recorded as an open finding in DATA_PROTECTION.md and RISK_MANAGEMENT_AND_RECOVERY.md, with the planned fix (store only the hostname and mask credentials).
+ 
+---
+ 
+## 2. Ethics Considerations
+ 
+1. **False assurance.** A user who sees Low Risk may treat the link as safe. In our own tests, links with several weak warning signs still scored Low Risk. The interface says "Low Risk Detected," not "Safe," shows the reasons behind every result, and the limitations statement says plainly that a low score is not a guarantee.
+2. **Unfair false positives.** The checks are heuristic and lean on signals such as unusual domain endings, shorteners and long URLs. A small business or an individual using a legitimate but unusual domain could be flagged as suspicious. The weights were tuned so one weak signal does not condemn a link, and every flag is explained so a user can judge it.
+3. **People submitting sensitive links.** Users may paste links that contain tokens or passwords. The app does not send them anywhere, and users are told not to submit links containing personal information. The browser-history storage and unmasked credentials are open findings that the team is fixing.
+4. **Misuse by someone evading detection.** The scoring rules and weights are public in the repository, so someone could test a phishing link until it scores Low Risk. We state this limitation and describe PhishGuard as a learning aid, not a security control.
+5. **Safe handling.** Submitted links are never opened by the analyzer, so checking a dangerous link cannot expose the user or the team to it.
+6. **Participant welfare.** Usability testing used anonymized participants, told them not to enter real personal links, and kept raw notes out of the public repository.
+7. **Honest claims.** The team does not claim live threat-intelligence coverage, measured detection accuracy or completed fixes that have not been verified.
+---
+ 
+## 3. AI-Use Disclosure
+ 
+The team remains responsible for everything it submits. AI tools were used as follows. Each entry names who used the tool and who checked the output.
+ 
+**Alicia Auxiliadora Giro: Claude (Anthropic).**
+- Drafted and edited sprint documents: planning, review and retro notes, standups and board card wording.
+- Drafted the security documents: THREATS.md, DATA_PROTECTION.md (the ASVS mapping and verification log), MITIGATION_AND_CONTINGENCY.md, RISK_MANAGEMENT_AND_RECOVERY.md and the security limitations section.
+- Reviewed `prototype/App.tsx` for the ASVS verification (a code-reading review, not a run of the app) and drafted a suggested patch for the two security findings. That patch has not been applied or tested.
+- Drafted the pitch script.
+- **Checked by:** Alicia read each document, and the ASVS requirement numbers were checked against the OWASP ASVS 4.0.3 text. Claims about test results were checked against the test documents in the repository.
+**Luis Felipe Nicaragua: Claude (Anthropic).**
+- Used for organizing the team's work and for research.
+- **Checked by:** Luis reviewed the output himself and confirmed that he checked everything he took from Claude.
