@@ -94,3 +94,15 @@ The team uses GitHub Projects for Scrum sprint planning and progress tracking.
 ```text
 Backlog → Sprint To Do → In Progress → Review → Done
                                       ↘ Blocked
+
+---
+
+## AI Use and Provenance
+
+Team members used AI tools while building PhishGuard. Each person reviewed the AI output they used before it went into the project.
+
+- **Claude (Anthropic):**
+  - Alicia Giro: drafting and editing project documents, security documentation, code review for the ASVS verification
+  - Luis Nicaragua: organizing work and research
+
+The application scores URLs with fixed rules. It uses no machine-learning model and no AI service at run time. Third-party components, licences and verified references are listed in the Week 13 provenance record.
