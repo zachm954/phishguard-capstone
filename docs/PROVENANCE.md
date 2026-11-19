@@ -34,8 +34,8 @@ Team 107, PhishGuard. This part covers what data the project used, the ethical i
 The team remains responsible for everything it submits. AI tools were used as follows. Each entry names who used the tool and who checked the output.
  
 **Alicia Auxiliadora Giro: Claude (Anthropic).**
-- Drafted and edited sprint documents: planning, review and retro notes, standups and board card wording.
-- Drafted the security documents: THREATS.md, DATA_PROTECTION.md (the ASVS mapping and verification log), MITIGATION_AND_CONTINGENCY.md, RISK_MANAGEMENT_AND_RECOVERY.md and the security limitations section.
+- Edited sprint documents: planning, review and retro notes, standups and board card wording.
+- Edited the security documents: THREATS.md, DATA_PROTECTION.md (the ASVS mapping and verification log), MITIGATION_AND_CONTINGENCY.md, RISK_MANAGEMENT_AND_RECOVERY.md and the security limitations section.
 - Reviewed `prototype/App.tsx` for the ASVS verification (a code-reading review, not a run of the app) and drafted a suggested patch for the two security findings. 
 - **Checked by:** Alicia read each document, and the ASVS requirement numbers were checked against the OWASP ASVS 4.0.3 text. Claims about test results were checked against the test documents in the repository.
 
