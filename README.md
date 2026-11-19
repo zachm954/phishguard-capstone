@@ -92,8 +92,11 @@ Major documentation located in [`docs/`](docs/) includes:
 Team members used AI tools while building PhishGuard. Each person reviewed the AI output they used before it went into the project.
 
 - **Claude (Anthropic):**
-  - Alicia Giro: drafting and editing project documents, security documentation, code review for the ASVS verification
+  - Zach Melendez: research and development
   - Luis Nicaragua: organizing work and research
+  - Alicia Giro: drafting and editing project documents, security documentation, code review for the ASVS verification
+  - 
+  - 
 
 The application scores URLs with fixed rules. It uses no machine-learning model and no AI service at run time. Third-party components, licences and verified references are listed in the Week 13 provenance record.
 
