@@ -34,7 +34,7 @@ Team 107, PhishGuard. This part covers what data the project used, the ethical i
 The team remains responsible for everything it submits. AI tools were used as follows. Each entry names who used the tool and who checked the output.
  
 **Alicia Auxiliadora Giro: Claude (Anthropic).**
-- Edited sprint documents: planning, review and retro notes, standups and board card wording.
+- Edited sprint documents: planning, review and retro notes.
 - Edited the security documents: THREATS.md, DATA_PROTECTION.md (the ASVS mapping and verification log), MITIGATION_AND_CONTINGENCY.md, RISK_MANAGEMENT_AND_RECOVERY.md and the security limitations section.
 - Reviewed `prototype/App.tsx` for the ASVS verification (a code-reading review, not a run of the app) and drafted a suggested patch for the two security findings. 
 - **Checked by:** Alicia read each document, and the ASVS requirement numbers were checked against the OWASP ASVS 4.0.3 text. Claims about test results were checked against the test documents in the repository.
@@ -43,3 +43,23 @@ The team remains responsible for everything it submits. AI tools were used as fo
 **Luis Felipe Nicaragua: Claude (Anthropic).**
 - Used for organizing the team's work and for research.
 - **Checked by:** Luis reviewed the output himself and confirmed that he checked everything he took from Claude.
+
+---
+
+**Zachariah Omar Melendez-Martinez: Claude (Anthropic).**
+- Used for research and development, which includes work on the application code.
+- **Checked by:** [Which parts of the code Claude helped write and how he reviewed and tested them]
+
+---
+
+**Jade Xavier Garcia:** [tools used, or "none"]
+- **Checked by:**
+
+---
+ 
+**Onyenka Robert Okoh:** [tools used, or "none"]
+- **Checked by:**
+
+---
+ 
+Anything an AI tool produced that the team could not explain or verify was removed or rewritten.
