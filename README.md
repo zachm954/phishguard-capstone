@@ -84,6 +84,7 @@ Major documentation located in [`docs/`](docs/) includes:
 - Mitigation and Contingency Plans (MITIGATION_AND_CONTINGENCY.md)
 - Risk Management and Recovery Plan (RISK_MANAGEMENT_AND_RECOVERY.md)
 - Security and Safety Limitations (LIMITATIONS_SECURITY_SECTION.md)
+- Provenance and Ethics: Data Boundary, Ethics Considerations and AI-Use Disclosure (PROVENANCE.md)
 
 ---
 
