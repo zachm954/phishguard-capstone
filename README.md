@@ -95,8 +95,8 @@ Team members used AI tools while building PhishGuard. Each person reviewed the A
   - Zach Melendez: research and development
   - Luis Nicaragua: organizing work and research
   - Alicia Giro: drafting and editing project documents, security documentation, code review for the ASVS verification
-  - 
-  - 
+  - Jade Garcia: 
+  - Onyenka Okoh:  
 
 The application scores URLs with fixed rules. It uses no machine-learning model and no AI service at run time. Third-party components, licences and verified references are listed in the Week 13 provenance record.
 
