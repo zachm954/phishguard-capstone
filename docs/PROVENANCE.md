@@ -46,7 +46,7 @@ The team remains responsible for everything it submits. AI tools were used as fo
 ---
 
 **Alicia Auxiliadora Giro: Claude (Anthropic).**
-- Used for documentation (sprint and security documents) and for security review of the application code. A suggested patch for two security findings was drafted but has not been applied or tested.
+- Used for documentation (sprint and security documents) and for security review of the application code. 
 - **Checked by:** Alicia read each document, and the ASVS requirement numbers were checked against the OWASP ASVS 4.0.3 text. Claims about test results were checked against the test documents in the repository.
 
 ---
