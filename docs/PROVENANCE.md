@@ -57,9 +57,11 @@ The team remains responsible for everything it submits. AI tools were used as fo
 
 ---
  
-**Onyenka Okoh:** [tools used, or "none"]
-- **Checked by:**
+**Onyenka Robert Okoh: ChatGPT (OpenAI).**
+- Used for quality assurance and documentation: the QA gap analysis, refining acceptance criteria, organizing testing procedures, analyzing manually collected test results, compiling the Acceptance Testing Report, identifying security concerns, evaluating phishing detection limitations, organizing GitHub documentation, and planning future testing.
+- **Checked by:** All acceptance tests were conducted manually. Onyenka used AI as a supplementary tool for analysis, documentation and project organization.
 
 ---
- 
+
 Anything an AI tool produced that the team could not explain or verify was removed or rewritten.
+
