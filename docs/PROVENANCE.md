@@ -1,6 +1,6 @@
 # Provenance and Ethics: Data Boundary, Ethics Considerations and AI-Use Disclosure
  
-Team 107, PhishGuard. This part covers what data the project used, the ethical issues it raises, and where AI tools helped. It sits alongside the component and licence inventory and the verified reference list.
+Team 107, PhishGuard. This part covers what data the project used, the ethical issues it raises, and where AI tools helped. The component and licence inventory and the verified references are filed separately on the capstone site.
  
 ---
  
@@ -22,10 +22,10 @@ Team 107, PhishGuard. This part covers what data the project used, the ethical i
  
 1. **False assurance.** A user who sees Low Risk may treat the link as safe. In our own tests, links with several weak warning signs still scored Low Risk. The interface says "Low Risk Detected," not "Safe," shows the reasons behind every result, and the limitations statement says plainly that a low score is not a guarantee.
 2. **Unfair false positives.** The checks are heuristic and lean on signals such as unusual domain endings, shorteners and long URLs. A small business or an individual using a legitimate but unusual domain could be flagged as suspicious. The weights were tuned so one weak signal does not condemn a link, and every flag is explained so a user can judge it.
-3. **People submitting sensitive links.** Users may paste links that contain tokens or passwords. The app does not send them anywhere, and users are told not to submit links containing personal information. The browser-history storage and unmasked credentials are open findings that the team is fixing.
+3. **People submitting sensitive links.** Users may paste links that contain tokens or passwords. The app does not send them anywhere, but the user should be warned not to submit links containing personal information, and the app does not yet show such a warning. The browser-history storage and unmasked credentials are open findings, recorded in DATA_PROTECTION.md with a planned fix.
 4. **Misuse by someone evading detection.** The scoring rules and weights are public in the repository, so someone could test a phishing link until it scores Low Risk. We state this limitation and describe PhishGuard as a learning aid, not a security control.
 5. **Safe handling.** Submitted links are never opened by the analyzer, so checking a dangerous link cannot expose the user or the team to it.
-6. **Participant welfare.** Usability testing used anonymized participants, told them not to enter real personal links, and kept raw notes out of the public repository.
+6. **Participant welfare.** The usability records in the repository identify participants as P1 to P5 only, with no names or contact details. The session results themselves are still being recorded.
 7. **Honest claims.** The team does not claim live threat-intelligence coverage, measured detection accuracy or completed fixes that have not been verified.
 ---
  
@@ -34,8 +34,8 @@ Team 107, PhishGuard. This part covers what data the project used, the ethical i
 The team remains responsible for everything it submits. AI tools were used as follows. Each entry names who used the tool and who checked the output.
  
 **Zachariah Melendez: Claude (Anthropic).**
-- Used for research and development, which includes work on the application code.
-- **Checked by:** Zach reviewed the code and adjusted it in Replit, then tested it manually with test cases TC01 to TC05. He confirmed the bit.ly false positive was resolved, the fake PayPal URL was flagged, and the known-bad test entry scored 100. Results and screenshots are in docs/Testing.
+- Used for research and development, mainly the URL risk analysis and scoring in `App.tsx`: the 12 security checks, the weighted risk scoring, and the known-bad URL and domain detection.
+- **Checked by:** Zach reviewed the code and adjusted it in Replit, then tested it manually with test cases TC01 to TC05. He confirmed the bit.ly false positive was resolved, the fake PayPal URL was flagged, and the known-bad test entry scored 100. Results and screenshots are in `docs/Testing`.
 
 ---
 
@@ -64,4 +64,3 @@ The team remains responsible for everything it submits. AI tools were used as fo
 ---
 
 Anything an AI tool produced that the team could not explain or verify was removed or rewritten.
-
