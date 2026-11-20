@@ -46,9 +46,7 @@ The team remains responsible for everything it submits. AI tools were used as fo
 ---
 
 **Alicia Auxiliadora Giro: Claude (Anthropic).**
-- Edited sprint documents: planning, review and retro notes.
-- Edited the security documents: THREATS.md, DATA_PROTECTION.md (the ASVS mapping and verification log), MITIGATION_AND_CONTINGENCY.md, RISK_MANAGEMENT_AND_RECOVERY.md and the security limitations section.
-- Reviewed `prototype/App.tsx` for the ASVS verification (a code-reading review, not a run of the app) and drafted a suggested patch for the two security findings. 
+- Used for documentation (sprint and security documents) and for security review of the application code. A suggested patch for two security findings was drafted but has not been applied or tested.
 - **Checked by:** Alicia read each document, and the ASVS requirement numbers were checked against the OWASP ASVS 4.0.3 text. Claims about test results were checked against the test documents in the repository.
 
 ---
