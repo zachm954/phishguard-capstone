@@ -95,7 +95,7 @@ Team members used AI tools while building PhishGuard. Each person reviewed the A
 - **Claude (Anthropic):**
   - Zach Melendez: research and development
   - Luis Nicaragua: organizing work and research
-  - Alicia Giro: drafting and editing project documents, security documentation, code review for the ASVS verification
+  - Alicia Giro: documentation and security overview
   - Jade Garcia: 
   - Onyenka Okoh:  
 
