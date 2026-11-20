@@ -35,7 +35,7 @@ The team remains responsible for everything it submits. AI tools were used as fo
  
 **Zachariah Melendez: Claude (Anthropic).**
 - Used for research and development, which includes work on the application code.
-- **Checked by:** [Which parts of the code Claude helped write and how he reviewed and tested them]
+- **Checked by:** Zach reviewed the code and adjusted it in Replit, then tested it manually with test cases TC01 to TC05. He confirmed the bit.ly false positive was resolved, the fake PayPal URL was flagged, and the known-bad test entry scored 100. Results and screenshots are in docs/Testing.
 
 ---
 
