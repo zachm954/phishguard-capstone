@@ -93,12 +93,11 @@ Major documentation located in [`docs/`](docs/) includes:
 Team members used AI tools while building PhishGuard. Each person reviewed the AI output they used before it went into the project.
 
 - **Claude (Anthropic):**
-  - Zach Melendez: research and development
+  - Alicia Giro: documentation and security review
   - Luis Nicaragua: organizing work and research
-  - Alicia Giro: documentation and security overview
-
-- **Replit (AI features):**
-  - Jade Garcia: templating and ideas for the application
+  - Zach Melendez: research and development, including the URL scoring logic
+- **Replit (AI features):** Jade Garcia: templating and ideas for the application
+- **ChatGPT (OpenAI):** Onyenka Okoh: quality assurance and documentation
 
 The application scores URLs with fixed rules. It uses no machine-learning model and no AI service at run time. Third-party components, licences and verified references are listed in the Week 13 provenance record.
 
