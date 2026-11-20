@@ -33,31 +33,31 @@ Team 107, PhishGuard. This part covers what data the project used, the ethical i
  
 The team remains responsible for everything it submits. AI tools were used as follows. Each entry names who used the tool and who checked the output.
  
-**Zachariah Omar Melendez-Martinez: Claude (Anthropic).**
+**Zachariah Melendez: Claude (Anthropic).**
 - Used for research and development, which includes work on the application code.
 - **Checked by:** [Which parts of the code Claude helped write and how he reviewed and tested them]
 
 ---
 
-**Luis Felipe Nicaragua: Claude (Anthropic).**
+**Luis Nicaragua: Claude (Anthropic).**
 - Used for organizing the team's work and for research.
 - **Checked by:** Luis reviewed the output himself and confirmed that he checked everything he took from Claude.
 
 ---
 
-**Alicia Auxiliadora Giro: Claude (Anthropic).**
+**Alicia Giro: Claude (Anthropic).**
 - Used for documentation (sprint and security documents) and for security review of the application code. 
 - **Checked by:** Alicia read each document, and the ASVS requirement numbers were checked against the OWASP ASVS 4.0.3 text. Claims about test results were checked against the test documents in the repository.
 
 ---
 
-**Jade Xavier Garcia:** Replit (AI features).**
+**Jade Garcia: Replit (AI features).**
 - Used mainly for templating and ideas for the application. Jade made minor coding adjustments by hand.
 - **Checked by:** Jade checked the output manually.
 
 ---
  
-**Onyenka Robert Okoh:** [tools used, or "none"]
+**Onyenka Okoh:** [tools used, or "none"]
 - **Checked by:**
 
 ---
