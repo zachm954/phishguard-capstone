@@ -51,8 +51,9 @@ The team remains responsible for everything it submits. AI tools were used as fo
 
 ---
 
-**Jade Xavier Garcia:** [tools used, or "none"]
-- **Checked by:**
+**Jade Xavier Garcia:** Replit (AI features).**
+- Used mainly for templating and ideas for the application. Jade made minor coding adjustments by hand.
+- **Checked by:** Jade checked the output manually.
 
 ---
  
